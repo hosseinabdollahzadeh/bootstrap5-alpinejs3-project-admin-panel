@@ -40,6 +40,7 @@ body {
     align-items: center;
     border-radius: 0.5rem;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .sidebar .sidebar-item .sidebar-link:hover {
@@ -54,8 +55,31 @@ body {
     background-color: #435ebe;
     color: #ffffff;
 }
-.sidebar .sidebar-item.active .sidebar-link i{
+
+.sidebar .sidebar-item.active .sidebar-link i {
     color: #ffffff;
+}
+
+.sidebar .submenu {
+    list-style: none;
+}
+
+.sidebar .submenu .submenu-item a {
+    padding: 0.7rem 1rem;
+    display: block;
+    color: #25396f;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar .submenu .submenu-item a:hover {
+    margin-right: 0.3rem;
+}
+
+.sidebar .sidebar-item .bi-chevron-down {
+    font-size: 0.8rem;
 }
 
 /* Main */
