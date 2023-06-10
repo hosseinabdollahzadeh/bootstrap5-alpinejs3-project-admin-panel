@@ -18,8 +18,26 @@
 
 <section x-data="toggleSidebar">
     <section x-cloak class="sidebar" :class="open || 'inactive'">
-        <i @click="toggle" class="fs-1 bi bi-x"></i>
-        Sidebar
+        <div class="d-flex align-items-center justify-content-between justify-content-lg-center">
+            <h4>Abdollahzadeh</h4>
+            <i @click="toggle" class="d-lg-none fs-1 bi bi-x"></i>
+        </div>
+        <div class="mt-4">
+            <ul class="list-unstyled">
+                <li class="sidebar-item active">
+                    <a class="sidebar-link" href="./index.html">
+                        <i class="me-2 bi bi-grid-fill"></i>
+                        <span>داشبورد</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./index.html">
+                        <i class="me-2 bi bi-shop"></i>
+                        <span>فروشگاه</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
     <section class="main" :class="open || 'active'">
         <header>
