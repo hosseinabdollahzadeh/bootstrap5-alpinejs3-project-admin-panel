@@ -286,6 +286,19 @@
                                 </div>
                             </div>
                         </div>
+                        <!--Chart-->
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        لورم ایپسوم
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="chartdiv" style="height: 500px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-xl-3">
                         <!--Profile-->
@@ -312,25 +325,11 @@
 <script>
     new PureCounter();
 </script>
-<script>
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('toggleSidebar', () => ({
-            open: window.innerWidth <= 992 ? false : true,
-
-            toggle() {
-                this.open = !this.open;
-            }
-        })),
-            Alpine.data('dropdown', () => ({
-                open: false,
-
-                toggle() {
-                    this.open = !this.open;
-                }
-            }))
-    })
-
-</script>
+<script src="./js/charts/chart1/cdn.amcharts.com_lib_4_core.js"></script>
+<script src="./js/charts/chart1/cdn.amcharts.com_lib_4_charts.js"></script>
+<script src="./js/charts/chart1/cdn.amcharts.com_lib_4_themes_animated.js"></script>
+<script src="./js/charts/chart1/chart1.js"></script>
+<script src="./js/alpineComponents.js"></script>
 </body>
 
 </html>
